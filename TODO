@@ -1,1 +1,2 @@
-TODO : Restauration automatique du Snapshot sur erreur
+TODO : Gerer un erreur eventuelle lors de la creation de Snapshot.
+TODO : Restauration automatique du Snapshot sur erreur lors de la modification DNS.

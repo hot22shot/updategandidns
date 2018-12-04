@@ -8,7 +8,7 @@ import unicodedata
 
 logging.basicConfig(filename='/usr/local/scripts/updatedns/updatedns.log',level=logging.INFO)
 
-# URL de la page retournant l'ip publique
+# URL de la page retournant l'ip publique au format ipv4
 urlpage = 'https://v4.ifconfig.co/json'
 
 # Clef API Gandi
@@ -17,13 +17,13 @@ apikey = 'A MODIFIER'
 # Domaine concerné (à modifier)
 mydomain = 'A MODIFIER'
 
-# date et heure du changement d'IP
+# Horodatage
 asctime = time.asctime( time.localtime() )
 
 # headers & cie
 ghg = {
-        'X-Api-Key': '{0}'.format(apikey)
-        }
+    'X-Api-Key': '{0}'.format(apikey)
+    }
 ghp = {
     'Content-Type': 'application/json',
     'X-Api-Key': '{0}'.format(apikey),
